@@ -64,7 +64,7 @@ export default function App() {
   const [spacing,      setSpacing]      = useState<'1.0' | '1.15' | '1.5' | '2.0'>('1.15');
   const [font,         setFont]         = useState<'inter' | 'yahei' | 'noto-sans' | 'noto-serif' | 'serif'>('inter');
   const [titleAlign,   setTitleAlign]   = useState<'left' | 'center' | 'right'>('left');
-  const [fontSize,     setFontSize]     = useState<'12' | '14' | '16' | '18'>('14');
+  const [fontSize,     setFontSize]     = useState<'12' | '14' | '16' | '18'>('16');
   const [contentAlign, setContentAlign] = useState<'left' | 'center' | 'right'>('left');
   const [isDownloadingAll, setIsDownloadingAll] = useState(false);
 
