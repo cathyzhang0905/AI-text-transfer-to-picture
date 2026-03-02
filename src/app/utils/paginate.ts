@@ -117,9 +117,7 @@ function splitIntoAtoms(section: string, isPlainText = false): Atom[] {
       paraLines.push(next);
       i++;
     }
-    for (const l of paraLines) {
-      if (l.trim()) result.push({ text: l.trim(), isList: false });
-    }
+    result.push({ text: paraLines.join('\n'), isList: false });
   }
 
   return result.filter(a => a.text.trim());
