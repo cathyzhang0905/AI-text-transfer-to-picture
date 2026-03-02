@@ -5,12 +5,12 @@ interface StyleSettingsProps {
   spacing: '1.0' | '1.15' | '1.5' | '2.0';
   font: 'inter' | 'yahei' | 'noto-sans' | 'noto-serif' | 'serif';
   titleAlign: 'left' | 'center' | 'right';
-  fontSize: '12' | '14' | '16' | '18';
+  fontSize: '12' | '14' | '16' | '18' | '20';
   contentAlign: 'left' | 'center' | 'right';
   onSpacingChange: (value: '1.0' | '1.15' | '1.5' | '2.0') => void;
   onFontChange: (value: 'inter' | 'yahei' | 'noto-sans' | 'noto-serif' | 'serif') => void;
   onTitleAlignChange: (value: 'left' | 'center' | 'right') => void;
-  onFontSizeChange: (value: '12' | '14' | '16' | '18') => void;
+  onFontSizeChange: (value: '12' | '14' | '16' | '18' | '20') => void;
   onContentAlignChange: (value: 'left' | 'center' | 'right') => void;
 }
 
@@ -88,9 +88,10 @@ export function StyleSettings({
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="12">12</SelectItem>
-              <SelectItem value="14">14（默认）</SelectItem>
-              <SelectItem value="16">16</SelectItem>
+              <SelectItem value="14">14</SelectItem>
+              <SelectItem value="16">16（默认）</SelectItem>
               <SelectItem value="18">18</SelectItem>
+              <SelectItem value="20">20</SelectItem>
             </SelectContent>
           </Select>
         </div>

@@ -19,7 +19,7 @@ import rehypeRaw from 'rehype-raw';
 import { preprocessHighlight } from './highlight';
 
 export type Spacing  = '1.0' | '1.15' | '1.5' | '2.0';
-export type FontSize = '12' | '14' | '16' | '18';
+export type FontSize = '12' | '14' | '16' | '18' | '20';
 export type Font     = 'inter' | 'yahei' | 'noto-sans' | 'noto-serif' | 'serif';
 
 // Total padding (all four sides combined = p-N * 2 in Tailwind)
@@ -42,6 +42,7 @@ const FONT_SIZE_PX: Record<FontSize, number> = {
   '14': 14,
   '16': 16,
   '18': 18,
+  '20': 20,
 };
 
 const FONT_FAMILY: Record<Font, string> = {
